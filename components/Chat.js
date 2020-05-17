@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-class Profile extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.headerText}>Profile </Text>
+        <Text style={styles.headerText}>Chat Room </Text>
         <Button
-          title="Go to Home"
-          onPress={() => this.props.navigation.navigate("Home")}
+          title="Go to Profile View"
+          onPress={() => this.props.navigation.navigate("Profile")}
         />
         <Button
           title="Go to About View"
           onPress={() => this.props.navigation.navigate("About")}
         />
         <Button
-          title="Go to Chat"
-          onPress={() => this.props.navigation.navigate("Chat")}
+          title="Go to Home"
+          onPress={() => this.props.navigation.navigate("Home")}
         />
       </View>
     );
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
-export default Profile;
+export default Home;

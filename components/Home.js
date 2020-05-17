@@ -14,6 +14,10 @@ class Home extends React.Component {
           title="Go to About View"
           onPress={() => this.props.navigation.navigate("About")}
         />
+        <Button
+          title="Go to Chat"
+          onPress={() => this.props.navigation.navigate("Chat")}
+        />
       </View>
     );
   }

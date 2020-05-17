@@ -14,6 +14,10 @@ class About extends React.Component {
           title="Go to Home"
           onPress={() => this.props.navigation.navigate("Home")}
         />
+        <Button
+          title="Go to Chat"
+          onPress={() => this.props.navigation.navigate("Chat")}
+        />
       </View>
     );
   }
