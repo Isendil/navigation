@@ -6,8 +6,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import MaterialBottomTabs from "./components/MaterialBottomTabs";
 import MaterialTopTabs from "./components/MaterialTopTabs";
 
-const Stack = createStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
