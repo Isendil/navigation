@@ -4,10 +4,11 @@ import Home from "./Home";
 import Profile from "./Profile";
 import About from "./About";
 import Chat from "./Chat";
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const Tab = createMaterialBottomTabNavigator();
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+
+const Tab = createMaterialTopTabNavigator();
 
 function MyTabs() {
   return (

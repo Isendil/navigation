@@ -1,37 +1,17 @@
 import React, { Component } from "react";
-
-import {
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  Button,
-  ScrollView,
-} from "react-native";
-import Home from "./components/Home";
-import Profile from "./components/Profile";
-import About from "./components/About";
-import Chat from "./components/Chat";
+import MyDrawer from "./components/MyDrawer";
+import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import MaterialBottomTabs from "./components/MaterialBottomTabs";
+import MaterialTopTabs from "./components/MaterialTopTabs";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ title: "Welcome" }}
-        />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="Chat" component={Chat} />
-      </Stack.Navigator> */}
-      <MaterialBottomTabs />
+      <MyDrawer />
     </NavigationContainer>
   );
 }
